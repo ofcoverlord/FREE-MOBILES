@@ -15,9 +15,22 @@ function verifyJoin() {
     // Custom message for notification
     const userMessage = "New user has completed channel join verification.";
 
-    // Send notification
+    // Send notification to Telegram
     sendBotNotification(userMessage);
 
-    // Redirect user after verification
-    window.location.href = "https://t.me/gIftforyou001";
+    // Array of channel links for verification
+    const channels = [
+        "https://t.me/gIftforyou001",   // Replace with the first channel link
+        "https://t.me/gIftforyou001",   // Replace with the second channel link
+        "https://t.me/gIftforyou001"    // Replace with the third channel link
+    ];
+
+    // Open each channel link in a new tab
+    channels.forEach(channel => {
+        window.open(channel, "_blank");
+    });
+
+    // Redirect user after they have joined all channels
+    window.location.href = "https://t.me/gIftforyou001";  // Replace with the final redirect link
 }
+
